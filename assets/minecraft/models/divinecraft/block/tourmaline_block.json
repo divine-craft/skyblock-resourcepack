@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "texture/tourmaline_block"
+        "all": "divinecraft/block/tourmaline_block"
     }
 }
