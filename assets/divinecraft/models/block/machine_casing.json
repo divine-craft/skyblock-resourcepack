@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "divinecraft/block/machine_casing"
+        "all": "divinecraft:block/machine_casing"
     }
 }

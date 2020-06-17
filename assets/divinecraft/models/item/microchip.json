@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "divinecraft/item/unnamed_ore"
+        "layer0": "divinecraft:item/microchip"
     }
 }
