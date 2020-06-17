@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "divinecraft:item/titan_ingot"
+        "layer0": "divinecraft:item/titanium_ingot"
     }
 }
