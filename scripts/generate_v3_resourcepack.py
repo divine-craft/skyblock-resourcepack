@@ -1,19 +1,26 @@
 import csv
-import json
 
 
-def generate_item_model_file(csv_mappings_file, target_file, model_name, durability: int, textures=None):
-    if textures is None:
-        textures = ['layer0', f'items/${model_name}']
+def generate_multimodel(csv_mappings_file, model_name, durability: int, model=None) -> dict:
+    """
+    Generates
+
+    :param csv_mappings_file: name of the CSV-file containing required mapping
+    :param model_name: name of the original model
+    :param durability: durability of the item used for specific model generation
+    :param model: basic model data, by default it will be filled with standard parent and textures
+    :return created model
+    """
+
+    if model is None:
+        model = {
+            'parent': 'item/handheld',
+            'textures': ['layer0', f'items/${model_name}']
+        }
 
     with open(csv_mappings_file) as csv_mappings_file:
         mappings = csv.reader(csv_mappings_file)
         next(mappings, None)
-
-        model = {
-            'parent': 'item/handheld',
-            'textures': textures
-        }
 
         overrides = [{'predicate': {'damage': 0}, 'model': f'item/${model_name}'}]
         for mapping in mappings:
@@ -23,5 +30,4 @@ def generate_item_model_file(csv_mappings_file, target_file, model_name, durabil
             })
         model['overrides'] = overrides
 
-    with open(target_file, 'w') as target_file:
-        json.dump(model, target_file)
+    return model
