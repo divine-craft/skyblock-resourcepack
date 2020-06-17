@@ -64,7 +64,7 @@ def generate_multimodel(csv_mappings_file, model_name, durability, model=None) -
     if model is None:
         model = {
             'parent': 'item/handheld',
-            'textures': ['layer0', f'items/{model_name}']
+            'textures': {'layer0': f'items/{model_name}'}
         }
 
     with open(csv_mappings_file) as csv_mappings_file:
