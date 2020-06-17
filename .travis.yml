@@ -19,4 +19,4 @@ deploy:
   on:
     tags: true
     repo: divine-craft/skyblock-resourcepack
-  skip_cleanup: true
+  cleanup: false
