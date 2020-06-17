@@ -1,11 +1,10 @@
 import json
 import os
-from typing import Final
 
 import click
 
 # see: https://minecraft.gamepedia.com/Model
-ALLOWED_MODEL_ROOT_TAGS: Final = {
+ALLOWED_MODEL_ROOT_TAGS = {
     'parent', 'ambientocclusion', 'display', 'textures', 'elements', 'gui_light', 'overrides'
 }
 
