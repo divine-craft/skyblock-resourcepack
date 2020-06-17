@@ -71,12 +71,14 @@ def generate_multimodel(csv_mappings_file: str, model_name: str, durability: int
         mappings = csv.reader(csv_mappings_file)
         next(mappings, None)
 
-        overrides = [{'predicate': {'damage': 0}, 'model': f'item/{model_name}'}]
+        original_model = f'item/{model_name}'
+        overrides = [{'predicate': {'damage': 0}, 'model': original_model}]
         for mapping in mappings:
             overrides.append({
                 'predicate': {'damaged': 0, 'damage': int(mapping[0]) / durability},
                 'model': mapping[1]
             })
+        overrides.append({'predicate': {'damaged': 1}, 'model': original_model})
         model['overrides'] = overrides
 
     return model
