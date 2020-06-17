@@ -4,7 +4,7 @@ language: minimal
 install: pip install --user -r requirements.txt
 
 # Use `generate_resourcepack.sh` script
-script: ./scripts/generate_resourcepacks.sh
+script: ./scripts/generate_resourcepack.sh
 
 deploy:
   cleanup: false
