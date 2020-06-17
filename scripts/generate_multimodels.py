@@ -50,7 +50,7 @@ TOOL_DURABILITIES = {
 }
 
 
-def generate_multimodel(csv_mappings_file, model_name, durability, model=None) -> dict:
+def generate_multimodel(csv_mappings_file: str, model_name: str, durability: int, model=None) -> dict:
     """
     Generates
 
@@ -82,7 +82,7 @@ def generate_multimodel(csv_mappings_file, model_name, durability, model=None) -
     return model
 
 
-def generate_multimodel_files(mappings_directory, target_directory) -> None:
+def generate_multimodel_files(mappings_directory: str, target_directory: str) -> None:
     """
     Generates multimodel files according to the given mappings
 
@@ -120,7 +120,7 @@ def generate_multimodel_files(mappings_directory, target_directory) -> None:
     help='Path to models\' folder to contain `<tool_name>.json` files',
     type=click.Path(file_okay=False, writable=True)
 )
-def main(mappings_path, target_path):
+def main(mappings_path: str, target_path: str) -> None:
     generate_multimodel_files(mappings_path, target_path)
 
 

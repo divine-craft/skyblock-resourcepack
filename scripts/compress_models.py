@@ -9,7 +9,7 @@ ALLOWED_MODEL_ROOT_TAGS = {
 }
 
 
-def compress_model_files(models_directory):
+def compress_model_files(models_directory: str) -> None:
     for parent, directories, files in os.walk(models_directory):
         for file in files:
             if not file.endswith('.json'):
@@ -39,7 +39,7 @@ def compress_model_files(models_directory):
     help='Path to the folder in which all json-models should be compressed',
     type=click.Path(file_okay=False, writable=True)
 )
-def main(models_path):
+def main(models_path: str) -> None:
     compress_model_files(models_path)
 
 
