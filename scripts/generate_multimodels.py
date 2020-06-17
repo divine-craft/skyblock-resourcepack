@@ -4,6 +4,8 @@ import os
 from typing import Final
 
 # see: https://minecraft.gamepedia.com/Item_durability#Tool_durability
+import click
+
 TOOL_DURABILITIES: Final = {
     # Wooden
     'wooden_shovel': 59,
@@ -81,7 +83,7 @@ def generate_multimodel(csv_mappings_file, model_name, durability: int, model=No
     return model
 
 
-def generate_model_files(mappings_directory, target_directory) -> None:
+def generate_multimodel_files(mappings_directory, target_directory) -> None:
     """
     Generates multimodel files according to the given mappings
 
@@ -103,9 +105,25 @@ def generate_model_files(mappings_directory, target_directory) -> None:
 
             with open(f'{target_directory}/{model_name}.json', 'w') as target_file:
                 json.dump(generate_multimodel(
-                    f'{mappings_directory}/{mappings_file}', model_name, durability), target_file
+                    f'{mappings_directory}/{mappings_file}', model_name, durability), target_file,
+                    separators=(',', ':')
                 )
 
 
+@click.command()
+@click.option(
+    '-m', '--mappings', 'mappings_path',
+    help='Path to mappings\' folder containing `<tool_name>.csv` files',
+    type=click.Path(file_okay=False)
+)
+@click.option(
+    '-t', '--target', 'target_path',
+    help='Path to models\' folder to contain `<tool_name>.json` files',
+    type=click.Path(file_okay=False, writable=True)
+)
+def main(mappings_path, target_path):
+    generate_multimodel_files(mappings_path, target_path)
+
+
 if __name__ == '__main__':
-    generate_model_files('./mappings/', './target/resourcepack/assets/minecraft/models/item/')
+    main()
