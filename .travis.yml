@@ -1,5 +1,8 @@
 language: minimal
 
+# Python is installed anyway, yet its version is important
+python: 3.8
+
 # Install libraries required by the scripts
 install: pip install --user -r requirements.txt
 
