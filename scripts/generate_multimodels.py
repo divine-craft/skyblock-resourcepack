@@ -50,7 +50,7 @@ TOOL_DURABILITIES = {
 }
 
 
-def generate_multimodel(csv_mappings_file, model_name, durability: int, model=None) -> dict:
+def generate_multimodel(csv_mappings_file, model_name, durability, model=None) -> dict:
     """
     Generates
 
