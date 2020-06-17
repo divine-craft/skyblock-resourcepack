@@ -10,7 +10,7 @@ ALLOWED_MODEL_ROOT_TAGS: Final = {
 }
 
 
-def K(models_directory):
+def patch_v2_models_to_v3(models_directory):
     for parent, directories, files in os.walk(models_directory):
         for file in files:
             if not file.endswith('.json'):
