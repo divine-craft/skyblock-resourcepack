@@ -12,11 +12,12 @@ deploy:
   api_key:
     secure: T6l7kk1h+Izm0DcYwpeBFNqPwL2NNzIwSChX1QpM9AM9Rg5IzVxslu41Kk5k5ZzKG96sr1KbnvRfp9ot/oM0EnGJJaFcvBTMjgBy0zVNkMhlQXrYP7MC9QIh5PbcoDnEoMubm5AS+LK98mudERtxWWVZyXKUCIV9LOx08ctfdCCt2sGFJhxyM52X59KyTbyeVQCKnGDtI1oGfxB8OQWOEzJZpom/lrOg4uEsHHSK22bG+nUpTWeJXIPeSXGuKvr7Yk/P6kMM3c3Ek1gqdSKbi7+5Y7EJdzc1ei1d6BD+2IjZ2L/zZo0arRD6T8uVTafk7jFH9nGxmKa+StHLzA+q2BiAaO8sS6z6ETxZj5ZUNF4bKtMabyjZ89tomeqWC+UYmvQh7WX/vJtl8VlKYczoLeduxWBmgadzBGWyYRwA6mi9Dt2pt4rdsf24APCwZ0wF+i7P+VUi8XQ/oT6bOsLr5gw173178RQzxWgpxS2VRkprXv68VYARay02FNsYG2y8BFe5uqH53nFiirpnD6GUrOX33xya2FczLL2vcA577NGHFTb29btgkLX3sGBRvwHGlFsFkL8P/bSzoyOQ7A+UJmrynhq4dGygVmRxkChaaxpVw8TSN/W1av9GddBVI718UtOnEpibrKRrWO9616ZGbciOuHlWLmN2eM+q0jE7uag=
   file:
-    - target/resourcepack_v2.zip
-    - target/resourcepack_v2.zip.sha1
-    - target/resourcepack_v3.zip
-    - target/resourcepack_v3.zip.sha1
+    - ./target/resourcepack_v2.zip
+    - ./target/resourcepack_v2.zip.sha1
+    - ./target/resourcepack_v3.zip
+    - ./target/resourcepack_v3.zip.sha1
   on:
     tags: true
     repo: divine-craft/skyblock-resourcepack
+  skip_cleanup: false
   cleanup: false
