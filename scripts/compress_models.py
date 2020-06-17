@@ -27,7 +27,7 @@ def compress_model_files(models_directory):
 
                 print(type(model))
                 # Remove unused root rags
-                for key, _ in list(model.items()):
+                for key in list(model.keys()):
                     if key not in ALLOWED_MODEL_ROOT_TAGS:
                         del model[key]
 
