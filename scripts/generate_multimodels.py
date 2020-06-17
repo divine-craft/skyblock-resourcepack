@@ -1,12 +1,11 @@
 import csv
 import json
 import os
-from typing import Final
 
 # see: https://minecraft.gamepedia.com/Item_durability#Tool_durability
 import click
 
-TOOL_DURABILITIES: Final = {
+TOOL_DURABILITIES = {
     # Wooden
     'wooden_shovel': 59,
     'wooden_pickaxe': 59,
@@ -51,7 +50,7 @@ TOOL_DURABILITIES: Final = {
 }
 
 
-def generate_multimodel(csv_mappings_file, model_name, durability: int, model=None) -> dict:
+def generate_multimodel(csv_mappings_file, model_name, durability, model=None) -> dict:
     """
     Generates
 
