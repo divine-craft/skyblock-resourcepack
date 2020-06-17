@@ -35,10 +35,10 @@ def patch_v2_models_to_v3(models_directory):
 
                         # 2) replace `blocks/` and `items/` with `block/` and `item/` respectively
                         if value.startswith('blocks/'):
-                            value = f'block:{value[7:]}'
+                            value = f'block/{value[7:]}'
                             texture_dirty = True
                         elif value.startswith('items/'):
-                            value = f'item:{value[6:]}'
+                            value = f'item/{value[6:]}'
                             texture_dirty = True
 
                         if texture_dirty:
