@@ -30,7 +30,8 @@ cp ./pack.png ./target/resourcepack/
 ############################
 
 # Generate multimodel files
-python3 ./scripts/generate_multimodels.py --mappings ./mappings/ --target ./target/resourcepack/assets/minecraft/items/
+python3 ./scripts/generate_multimodels.py --mappings ./mappings/ \
+--target ./target/resourcepack/assets/minecraft/models/item/
 
 # Compress JSON models
 python3 ./scripts/compress_models.py --models ./target/resourcepack/assets/divinecraft/models/
@@ -48,10 +49,9 @@ cd ../../
 # Generate resourcepack V3 #
 ############################
 
-# Rename minecraft's `items/` folder to `items/` as it contains multimodel files
-mv ./target/resourcepack/assets/minecraft/items/ ./target/resourcepack/assets/minecraft/item/
-
+# Fix models
 python3 ./scripts/patch_v2_models_to_v3.py --models ./target/resourcepack/assets/divinecraft/models/
+python3 ./scripts/patch_v2_models_to_v3.py --models ./target/resourcepack/assets/minecraft/models/
 
 # Create valid pack.mcmeta
 python3 ./scripts/generate_pack_mcmeta.py --path ./target/resourcepack/ --version 2 --description "$DESCRIPTION"
