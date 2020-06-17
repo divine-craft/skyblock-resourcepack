@@ -1,7 +1,7 @@
-language: generic
+language: minimal
 
 # Install libraries required by the scripts
-install: pip3 install click --user
+install: pip install --user -r requirements.txt
 
 # Use `generate_resourcepack.sh` script
 before_script: chmod ugo+x scripts/generate_resourcepacks.sh
