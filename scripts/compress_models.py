@@ -12,20 +12,17 @@ ALLOWED_MODEL_ROOT_TAGS: Final = {
 
 def compress_model_files(models_directory):
     for parent, directories, files in os.walk(models_directory):
-        print('parent =', parent, ',', 'directories =', directories, ',', 'files =', files)
         for file in files:
             if not file.endswith('.json'):
                 continue
 
             file = os.path.join(parent, file)
-            print('Handling:', file)
             with open(file, 'r+') as model_file:
                 model = json.load(model_file)
                 model_file.seek(0)
 
                 # Patches start
 
-                print(type(model))
                 # Remove unused root rags
                 for key in list(model.keys()):
                     if key not in ALLOWED_MODEL_ROOT_TAGS:
