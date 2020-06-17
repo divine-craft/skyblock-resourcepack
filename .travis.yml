@@ -3,8 +3,8 @@ language: minimal
 # Install libraries required by the scripts
 install: pip install --user -r requirements.txt
 
-# Use `generate_resourcepack.sh` script
-script: ./scripts/generate_resourcepack.sh
+# Generate resourcepacks as ZIP-archives
+script: ./scripts/generate_resourcepacks.sh
 
 deploy:
   cleanup: false
