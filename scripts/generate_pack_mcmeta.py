@@ -5,9 +5,6 @@ import click
 
 
 def generate_pack_mcmeta(path: str, version: int, description: str) -> None:
-    print(type(path), path)
-    print(type(version), version)
-    print(type(description), description)
     with open(os.path.join(path, 'pack.mcmeta'), 'w') as file:
         json.dump({
             'pack': {
