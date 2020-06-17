@@ -1,7 +1,7 @@
 language: generic
 
-# Install tool for minimizing JSON-files
-install: pip install -U click
+# Install libraries required by the scripts
+install: pip3 install click --user
 
 # Use `generate_resourcepack.sh` script
 before_script: chmod ugo+x scripts/generate_resourcepacks.sh
