@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "divinecraft/item/palladium_ingot"
+        "layer0": "divinecraft:item/unnamed_ore"
     }
 }

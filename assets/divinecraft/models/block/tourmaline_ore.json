@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "divinecraft/block/tourmaline_ore",
+		"0": "divinecraft:block/tourmaline_ore",
 		"particle": "#0"
 	},
 	"elements": [
