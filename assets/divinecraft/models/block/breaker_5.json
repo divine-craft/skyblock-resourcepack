@@ -1,9 +1,9 @@
 {
 	"credit": "Made by _Kreeper_RUs",
 	"textures": {
-		"0": "divinecraft:block/comperssoer_5",
-		"1": "divinecraft:block/comperssoer_5_face",
-		"4": "divinecraft:block/comperssor_5_down",
+		"0": "divinecraft:block/compressor_5",
+		"1": "divinecraft:block/compressor_5_face",
+		"4": "divinecraft:block/compressor_5_down",
 		"5": "blocks/concrete_powder_red",
 		"6": "blocks/concrete_white",
 		"7": "blocks/concrete_black",
@@ -15,7 +15,7 @@
 		"13": "blocks/concrete_gray",
 		"14": "blocks/concrete_blue",
 		"15": "blocks/concrete_powder_blue",
-		"16": "divinecraft:block/_kreeper_rus",
+		"16": "divinecraft:skin/_kreeper_rus",
 		"particle": "blocks/concrete_powder_red"
 	},
 	"elements": [
