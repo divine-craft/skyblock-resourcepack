@@ -11,7 +11,7 @@
 		"7": "divinecraft:block/comperssor_1_back",
 		"8": "divinecraft:block/comperssor_1_right",
 		"9": "divinecraft:block/comperssor_1_left",
-		"particle": "divinecraft:block/comperssor_daylight_detector_side"
+		"particle": "divinecraft:block/compressor_1_up"
 	},
 	"elements": [
 		{

@@ -9,8 +9,8 @@
 		"7": "blocks/concrete_orange",
 		"8": "blocks/concrete_yellow",
 		"9": "blocks/concrete_lime",
-		"11": "divinecraft:block/placer_1_trubs",
-		"particle": "divinecraft:block/placer_1_trubs",
+		"11": "divinecraft:block/placer_1_pipes",
+		"particle": "divinecraft:block/placer_1_pipes",
 		"1_5": "entity/chest/normal"
 	},
 	"elements": [
