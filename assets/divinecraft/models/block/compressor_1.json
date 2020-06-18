@@ -5,12 +5,12 @@
 		"1": "blocks/piston_side",
 		"2": "blocks/piston_bottom",
 		"3": "blocks/piston_top_normal",
-		"4": "divinecraft:block/comperssor_1",
+		"4": "divinecraft:block/compressor_1",
 		"5": "blocks/iron_block",
 		"6": "blocks/command_block_conditional",
-		"7": "divinecraft:block/comperssor_1_back",
-		"8": "divinecraft:block/comperssor_1_right",
-		"9": "divinecraft:block/comperssor_1_left",
+		"7": "divinecraft:block/compressor_1_back",
+		"8": "divinecraft:block/compressor_1_right",
+		"9": "divinecraft:block/compressor_1_left",
 		"particle": "divinecraft:block/compressor_1_up"
 	},
 	"elements": [
