@@ -4,7 +4,7 @@
 		"0": "divinecraft:block/teleporter_1",
 		"1": "divinecraft:block/teleporter_1",
 		"2": "divinecraft:block/teleporter_1_up",
-		"particle": "divinecraft:block/teleporter"
+		"particle": "divinecraft:block/teleporter_1"
 	},
 	"elements": [
 		{
