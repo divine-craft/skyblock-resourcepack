@@ -2,12 +2,12 @@
 	"credit": "Made by _Kreeper_RUs",
 	"textures": {
 		"5": "blocks/concrete_gray",
+		"particle": "blocks/concrete_gray",
+		"2_3": "blocks/concrete_cyan",
 		"2_1": "blocks/anvil_base",
 		"2_2": "blocks/concrete_lime",
-		"2_3": "blocks/concrete_cyan",
 		"2_4": "divinecraft:block/placer_1_pipes",
-		"2_5": "blocks/concrete_silver",
-		"particle": "blocks/concrete_gray"
+		"2_5": "blocks/concrete_silver"
 	},
 	"elements": [
 		{
