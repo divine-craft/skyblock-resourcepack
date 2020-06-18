@@ -9,7 +9,7 @@ ALLOWED_MODEL_ROOT_TAGS = {
 }
 
 
-def patch_v2_models_to_v3(models_directory: str) -> None:
+def patch_v3_models_to_v4(models_directory: str) -> None:
     for parent, directories, files in os.walk(models_directory):
         for file in files:
             if not file.endswith('.json'):
@@ -54,11 +54,11 @@ def patch_v2_models_to_v3(models_directory: str) -> None:
 @click.command()
 @click.option(
     '-m', '--models', 'models_path',
-    help='Path to the folder in which all json-models should be updated from V2 to V3',
+    help='Path to the folder in which all json-models should be updated from V3 to V4',
     type=click.Path(file_okay=False, writable=True)
 )
 def main(models_path: str) -> None:
-    patch_v2_models_to_v3(models_path)
+    patch_v3_models_to_v4(models_path)
 
 
 if __name__ == '__main__':
