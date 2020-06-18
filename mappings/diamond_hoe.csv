@@ -21,4 +21,5 @@ Damage,Model
 80,divinecraft:block/item_sucker_1
 81,divinecraft:block/item_sucker_2
 82,divinecraft:block/item_sucker_3
-96,divinecraft:block/teleporter
+96,divinecraft:block/teleporter_1
+97,divinecraft:block/teleporter_2
