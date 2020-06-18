@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "divinecraft:block/teleporter",
-		"1": "divinecraft:block/teleporter_down",
-		"2": "divinecraft:block/teleporter_up",
+		"0": "divinecraft:block/teleporter_1",
+		"1": "divinecraft:block/teleporter_1",
+		"2": "divinecraft:block/teleporter_1_up",
 		"particle": "divinecraft:block/teleporter"
 	},
 	"elements": [
