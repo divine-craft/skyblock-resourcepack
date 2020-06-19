@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/pane_side",
 	"ambientocclusion": false,
 	"textures": {
 		"0": "blocks/piston_top_normal",
