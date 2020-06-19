@@ -5,7 +5,7 @@
 		"1": "blocks/anvil_base",
 		"2": "blocks/concrete_lime",
 		"3": "blocks/concrete_cyan",
-		"4": "block/placer_1_pipes",
+		"4": "divinecraft:block/placer_1_pipes",
 		"5": "blocks/concrete_silver",
 		"particle": "blocks/concrete_gray"
 	},
