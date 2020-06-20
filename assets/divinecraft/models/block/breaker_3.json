@@ -2,15 +2,15 @@
 	"credit": "Made by _Kreeper_RUs",
 	"textures": {
 		"1": "divinecraft:block/breaker_3",
-		"2": "divinecraft:blocks/concrete_gray",
-		"3": "divinecraft:blocks/concrete_powder_gray",
-		"5": "divinecraft:blocks/concrete_silver",
-		"6": "divinecraft:blocks/concrete_black",
-		"7": "divinecraft:blocks/lava_still",
-		"8": "divinecraft:blocks/gold_block",
+		"2": "blocks/concrete_gray",
+		"3": "blocks/concrete_powder_gray",
+		"5": "blocks/concrete_silver",
+		"6": "blocks/concrete_black",
+		"7": "blocks/lava_still",
+		"8": "blocks/gold_block",
 		"9": "divinecraft:block/machine_casing",
-		"10": "divinecraft:blocks/concrete_red",
-		"11": "divinecraft:blocks/concrete_powder_brown",
+		"10": "blocks/concrete_red",
+		"11": "blocks/concrete_powder_brown",
 		"particle": "divinecraft:block/machine_casing"
 	},
 	"elements": [
