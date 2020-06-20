@@ -10,7 +10,8 @@
 		"8": "blocks/gold_block",
 		"9": "divinecraft:block/machine_casing",
 		"10": "blocks/concrete_red",
-		"11": "blocks/concrete_powder_brown"
+		"11": "blocks/concrete_powder_brown",
+		"particle": "divinecraft:block/machine_casing"
 	},
 	"elements": [
 		{
