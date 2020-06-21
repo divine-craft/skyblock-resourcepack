@@ -1,13 +1,12 @@
 {
 	"credit": "Made by _Kreeper_RUs",
 	"textures": {
-		"0": "divinecraft:block/compressor_5",
-		"1": "divinecraft:block/compressor_5_face",
-		"2": "divinecraft:block/crafting_display",
-		"3": "divinecraft:block/compressor_5_down2",
-		"4": "divinecraft:block/compressor_5_down",
-		"16": "divinecraft:skin/_kreeper_rus",
-		"particle": "blocks/concrete_powder_red",
+		"0": "divinecraft:block/comperssoer_5",
+		"1": "divinecraft:block/comperssoer_5_face",
+		"2": "divinecraft:block/crafting_5",
+		"3": "divinecraft:block/comperssor_5_down2",
+		"4": "divinecraft:block/comperssor_5_down",
+		"16": "divinecraft:block/_kreeper_rus",
 		"1_5": "blocks/wool_colored_white",
 		"1_6": "blocks/crafting_table_top",
 		"1_7": "blocks/crafting_table_side",
@@ -10823,8 +10822,7 @@
 			"scale": [0.625, 0.625, 0.625]
 		},
 		"head": {
-			"translation": [0, -29, 0],
-			"scale": [1.6, 1.6, 1.6]
+			"scale": [2.3, 2.3, 2.3]
 		},
 		"fixed": {
 			"scale": [0.5, 0.5, 0.5]
