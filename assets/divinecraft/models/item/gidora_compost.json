@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "divinecraft:items/gidora_compost"
+        "layer0": "divinecraft:item/gidora_compost"
     }
 }
