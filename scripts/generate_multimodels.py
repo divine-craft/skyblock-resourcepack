@@ -3,12 +3,11 @@ import json
 import os
 
 # see: https://minecraft.gamepedia.com/Item_durability#Tool_durability
-from typing import Final
 
 import click
 
 # note: on `pack_format: 4` durabilities should be decreased by 1
-TOOL_DURABILITIES_V3: Final = {
+TOOL_DURABILITIES_V3 = {
     # Wooden
     'wooden_shovel': 59,
     'wooden_pickaxe': 59,
