@@ -53,7 +53,7 @@ TOOL_DURABILITIES_V3 = {
 
 
 # TODO fix corner-cases
-TOOL_DURABILITIES_V4: Final = dict(map(lambda pair: (pair[0], pair[1]), TOOL_DURABILITIES_V3.items()))
+TOOL_DURABILITIES_V4 = dict(map(lambda pair: (pair[0], pair[1]), TOOL_DURABILITIES_V3.items()))
 
 
 def generate_multimodel(csv_mappings_file: str, model_name: str, durability: int, model=None) -> dict:
