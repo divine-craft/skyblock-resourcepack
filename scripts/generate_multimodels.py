@@ -3,9 +3,11 @@ import json
 import os
 
 # see: https://minecraft.gamepedia.com/Item_durability#Tool_durability
+
 import click
 
-TOOL_DURABILITIES = {
+# note: on `pack_format: 4` durabilities should be decreased by 1
+TOOL_DURABILITIES_V3 = {
     # Wooden
     'wooden_shovel': 59,
     'wooden_pickaxe': 59,
@@ -50,6 +52,10 @@ TOOL_DURABILITIES = {
 }
 
 
+# TODO fix corner-cases
+TOOL_DURABILITIES_V4 = dict(map(lambda pair: (pair[0], pair[1]), TOOL_DURABILITIES_V3.items()))
+
+
 def generate_multimodel(csv_mappings_file: str, model_name: str, durability: int, model=None) -> dict:
     """
     Generates
@@ -84,30 +90,32 @@ def generate_multimodel(csv_mappings_file: str, model_name: str, durability: int
     return model
 
 
-def generate_multimodel_files(mappings_directory: str, target_directory: str) -> None:
+def generate_multimodel_files(mappings_directory: str, target_directory: str, pack_format: int) -> None:
     """
     Generates multimodel files according to the given mappings
 
     :param mappings_directory: directory containing mapping-files names `<tool_name>.csv`
     :param target_directory: directory to store generated multimodel files names as `<tool_name>.json`
+    :param pack_format: format of the resourcepack for which the model is generated
     """
 
     # Start by creating a directory so that the permissions are fail-safely checked
     if not os.path.exists(target_directory):
         os.makedirs(target_directory)
 
+    durabilities = TOOL_DURABILITIES_V4 if pack_format >= 4 else TOOL_DURABILITIES_V3
+
     for mappings_file in os.listdir(mappings_directory):
         if mappings_file.endswith('.csv'):
             model_name = mappings_file[:-4]
 
-            durability = TOOL_DURABILITIES[model_name]
+            durability = durabilities[model_name]
             if durability is None:
                 raise ValueError(f'Unknown tool to generate model for: {model_name}')
 
             with open(f'{target_directory}/{model_name}.json', 'w') as target_file:
                 json.dump(generate_multimodel(
-                    f'{mappings_directory}/{mappings_file}', model_name, durability), target_file,
-                    separators=(',', ':')
+                    f'{mappings_directory}/{mappings_file}', model_name, durability), target_file, separators=(',', ':')
                 )
 
 
@@ -122,8 +130,13 @@ def generate_multimodel_files(mappings_directory: str, target_directory: str) ->
     help='Path to models\' folder to contain `<tool_name>.json` files',
     type=click.Path(file_okay=False, writable=True)
 )
-def main(mappings_path: str, target_path: str) -> None:
-    generate_multimodel_files(mappings_path, target_path)
+@click.option(
+    '-f', '--format', 'pack_format',
+    help='Pack format of the pack for which the model is generated',
+    type=int
+)
+def main(mappings_path: str, target_path: str, pack_format: int) -> None:
+    generate_multimodel_files(mappings_path, target_path, pack_format)
 
 
 if __name__ == '__main__':

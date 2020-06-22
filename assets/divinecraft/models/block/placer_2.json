@@ -8,7 +8,8 @@
 		"5": "blocks/piston_bottom",
 		"7": "blocks/piston_side",
 		"8": "blocks/piston_top_normal",
-		"9": "blocks/glazed_terracotta_magenta"
+		"9": "blocks/glazed_terracotta_magenta",
+		"particle": "blocks/command_block_back"
 	},
 	"elements": [
 		{

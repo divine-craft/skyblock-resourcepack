@@ -2,5 +2,10 @@
     "parent": "block/cube_all",
     "textures": {
         "all": "divinecraft:block/copper_block"
+    },
+    "display": {
+		"head": {
+			"scale": [2.3, 2.3, 2.3]
+		}
     }
 }
