@@ -1,1 +1,2 @@
-\u00A7d\u00A7lDivineCraft\u00A7e textures
+§d§lDivineCraft§e§l pack
+    §7§lby §5§lBlocks' Development Committee
