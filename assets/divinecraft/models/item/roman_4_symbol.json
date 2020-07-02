@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "divinecraft:item/roman_4_symbol"
+        "layer0": "divinecraft:menu/roman_4_symbol"
     }
 }
