@@ -8,9 +8,9 @@
 		"5": "blocks/glass_purple",
 		"7": "blocks/concrete_magenta",
 		"8": "blocks/wool_colored_silver",
-		"9": "divinecraft:bosses/ciborg_right_arm",
-		"10": "divinecraft:bosses/ciborg_right_arm2",
-		"11": "divinecraft:bosses/ciborg_right_arm3",
+		"9": "divinecraft:boss/cyborg_right_arm",
+		"10": "divinecraft:boss/cyborg_right_arm2",
+		"11": "divinecraft:boss/cyborg_right_arm3",
 		"particle": "blocks/concrete_powder_purple"
 	},
 	"elements": [
