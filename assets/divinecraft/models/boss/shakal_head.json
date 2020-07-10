@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "blocks/shakal_1",
-		"2": "blocks/shakal_2",
-		"3": "blocks/shakal_3",
-		"particle": "blocks/shakal_2"
+		"1": "divinecraft:boss/shakal_head_1",
+		"2": "divinecraft:boss/shakal_head_2",
+		"3": "divinecraft:boss/shakal_head_3",
+		"particle": "divinecraft:boss/shakal_head_2"
 	},
 	"elements": [
 		{
