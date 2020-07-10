@@ -75,3 +75,5 @@ fabric.properties
 # Directory used for building resourcepack
 target/
 
+assets/divinecraft/models/boss/boss_drone.json
+assets/divinecraft/models/boss/boss_jarvis_right_arm.json
