@@ -1,0 +1,11 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "divinecraft:block/bronze_block"
+    },
+    "display": {
+		"head": {
+			"scale": [2.3, 2.3, 2.3]
+		}
+    }
+}
