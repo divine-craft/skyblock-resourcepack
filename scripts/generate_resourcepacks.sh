@@ -72,7 +72,8 @@ ${PYTHON_INTERPRETER} ./scripts/patch_v3_models_to_v4.py --models ./target/resou
 ${PYTHON_INTERPRETER} ./scripts/patch_v3_models_to_v4.py --models ./target/resourcepack_v4/assets/minecraft/models/
 
 # Create valid pack.mcmeta
-${PYTHON_INTERPRETER} ./scripts/generate_pack_mcmeta.py --path ./target/resourcepack_v4/ --version 4 --description "$DESCRIPTION"
+${PYTHON_INTERPRETER} ./scripts/generate_pack_mcmeta.py \
+--path ./target/resourcepack_v4/ --version 4 --description "$DESCRIPTION"
 
 # Generate v4 ZIP-archive
 # `cd` is used not to keep full path to files
