@@ -1,0 +1,18 @@
+name: Build
+
+on: [ push, pull_request, workflow_dispatch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate resourcepacks
+        run: $GITHUB_WORKSPACE/scripts/generate_resourcepacks.sh
+
+      - name: Generate artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Resourcepacks
+          path: target/resourcepack_v*.zip
