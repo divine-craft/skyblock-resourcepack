@@ -29,15 +29,24 @@ mkdir ./target/resourcepack_v3/
 cp -r ./assets/ ./target/resourcepack_v3/assets/
 cp ./pack.png ./target/resourcepack_v3/
 
+# Find valid Python interpreter
+if [[ "$(python --version)" == "Python 3.*" ]]; then
+  PYTHON_INTERPRETER=python
+else
+  PYTHON_INTERPRETER=python3
+fi
+echo "Using \`${PYTHON_INTERPRETER}\` as Python interpreter"
+
 # Generate v3 multimodel files
-python ./scripts/generate_multimodels.py --mappings ./mappings/ \
+${PYTHON_INTERPRETER} ./scripts/generate_multimodels.py --mappings ./mappings/ \
 --target ./target/resourcepack_v3/assets/minecraft/models/item/ --format 3
 
 # Compress JSON models
-python ./scripts/compress_models.py --models ./target/resourcepack_v3/assets/divinecraft/models/
+${PYTHON_INTERPRETER} ./scripts/compress_models.py --models ./target/resourcepack_v3/assets/divinecraft/models/
 
 # Create valid pack.mcmeta
-python ./scripts/generate_pack_mcmeta.py --path ./target/resourcepack_v3/ --version 3 --description "$DESCRIPTION"
+${PYTHON_INTERPRETER} ./scripts/generate_pack_mcmeta.py \
+--path ./target/resourcepack_v3/ --version 3 --description "$DESCRIPTION"
 
 # Generate v3 ZIP-archive
 # `cd` is used not to keep full path to files
@@ -55,15 +64,16 @@ cp -r ./target/resourcepack_v3/ ./target/resourcepack_v4
 
 # Generate v4 multimodel files
 rm -r ./target/resourcepack_v4/assets/minecraft/models/item/
-python ./scripts/generate_multimodels.py --mappings ./mappings/ \
+${PYTHON_INTERPRETER} ./scripts/generate_multimodels.py --mappings ./mappings/ \
 --target ./target/resourcepack_v4/assets/minecraft/models/item/ --format 4
 
 # Fix models
-python ./scripts/patch_v3_models_to_v4.py --models ./target/resourcepack_v4/assets/divinecraft/models/
-python ./scripts/patch_v3_models_to_v4.py --models ./target/resourcepack_v4/assets/minecraft/models/
+${PYTHON_INTERPRETER} ./scripts/patch_v3_models_to_v4.py --models ./target/resourcepack_v4/assets/divinecraft/models/
+${PYTHON_INTERPRETER} ./scripts/patch_v3_models_to_v4.py --models ./target/resourcepack_v4/assets/minecraft/models/
 
 # Create valid pack.mcmeta
-python ./scripts/generate_pack_mcmeta.py --path ./target/resourcepack_v4/ --version 4 --description "$DESCRIPTION"
+${PYTHON_INTERPRETER} ./scripts/generate_pack_mcmeta.py \
+--path ./target/resourcepack_v4/ --version 4 --description "$DESCRIPTION"
 
 # Generate v4 ZIP-archive
 # `cd` is used not to keep full path to files
