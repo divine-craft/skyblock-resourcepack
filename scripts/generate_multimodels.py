@@ -6,38 +6,43 @@ import os
 
 import click
 
-# note: on `pack_format: 4` durabilities should be decreased by 1
-TOOL_DURABILITIES_V3 = {
+TOOL_DURABILITIES = {
     # Wooden
     'wooden_shovel': 59,
     'wooden_pickaxe': 59,
     'wooden_axe': 59,
     'wooden_hoe': 59,
+    'wooden_sword': 59,
     # Stone
     'stone_shovel': 131,
     'stone_pickaxe': 131,
     'stone_axe': 131,
     'stone_hoe': 131,
+    'stone_sword': 131,
     # Iron
     'iron_shovel': 250,
     'iron_pickaxe': 250,
     'iron_axe': 250,
     'iron_hoe': 250,
+    'iron_sword': 250,
     # Golden
     'golden_shovel': 32,
     'golden_pickaxe': 32,
     'golden_axe': 32,
     'golden_hoe': 32,
+    'golden_sword': 32,
     # Diamond
     'diamond_shovel': 1561,
     'diamond_pickaxe': 1561,
     'diamond_axe': 1561,
     'diamond_hoe': 1561,
+    'diamond_sword': 1561,
     # Netherite
     'netherite_shovel': 2031,
     'netherite_pickaxe': 2031,
     'netherite_axe': 2031,
     'netherite_hoe': 2031,
+    'netherite_sword': 2031,
     # Other
     'fishing_rod': 64,
     'flint_and_steel': 64,
@@ -50,10 +55,6 @@ TOOL_DURABILITIES_V3 = {
     'crossbow': 326,
     'warped_fungus_on_a_stick': 100,
 }
-
-
-# TODO fix corner-cases
-TOOL_DURABILITIES_V4 = dict(map(lambda pair: (pair[0], pair[1]), TOOL_DURABILITIES_V3.items()))
 
 
 def generate_multimodel(csv_mappings_file: str, model_name: str, durability: int, model=None) -> dict:
@@ -103,13 +104,11 @@ def generate_multimodel_files(mappings_directory: str, target_directory: str, pa
     if not os.path.exists(target_directory):
         os.makedirs(target_directory)
 
-    durabilities = TOOL_DURABILITIES_V4 if pack_format >= 4 else TOOL_DURABILITIES_V3
-
     for mappings_file in os.listdir(mappings_directory):
         if mappings_file.endswith('.csv'):
             model_name = mappings_file[:-4]
 
-            durability = durabilities[model_name]
+            durability = TOOL_DURABILITIES[model_name]
             if durability is None:
                 raise ValueError(f'Unknown tool to generate model for: {model_name}')
 
