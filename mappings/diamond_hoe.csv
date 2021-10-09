@@ -25,3 +25,11 @@ Damage,Model
 97,divinecraft:block/teleporter_2
 112,divinecraft:block/stacker_1
 144,divinecraft:block/palladium_condenser
+256,divinecraft:block/simple_frame
+257,divinecraft:block/barrel
+258,divinecraft:block/framed_lattice
+259,divinecraft:block/framed_sifter
+260,divinecraft:block/framed_fine_sifter
+261,divinecraft:block/silkworm_leaves
+262,divinecraft:block/alpha_silkworm_leaves
+263,divinecraft:block/lava_melter
