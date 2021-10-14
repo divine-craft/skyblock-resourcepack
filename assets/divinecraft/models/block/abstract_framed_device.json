@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "blocks:from_nothing/blocks/simple_frame_pillar",
-		"1": "blocks:from_nothing/blocks/simple_frame_wall",
-		"2": "blocks:from_nothing/blocks/simple_frame_poddon",
+		"0": "divinecraft:block/simple_frame_pillar",
+		"1": "divinecraft:block/simple_frame_wall",
+		"2": "divinecraft:block/simple_frame_poddon",
 		"3": "",
-		"particle": "blocks:from_nothing/blocks/simple_frame_pillar"
+		"particle": "divinecraft:block/simple_frame_pillar"
 	},
 	"elements": [
 		{

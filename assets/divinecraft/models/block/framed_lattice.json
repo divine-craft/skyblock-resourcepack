@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/abstract_framed_device",
 	"textures": {
-		"0": "blocks:from_nothing/blocks/simple_frame_pillar",
-		"1": "blocks:from_nothing/blocks/simple_frame_wall",
-		"2": "blocks:from_nothing/blocks/simple_frame_poddon",
-		"3": "blocks:from_nothing/blocks/framed_lattice_contents",
-		"particle": "blocks:from_nothing/blocks/simple_frame_pillar"
+		"0": "divinecraft:block/block/simple_frame_pillar",
+		"1": "divinecraft:block/simple_frame_wall",
+		"2": "divinecraft:block/simple_frame_poddon",
+		"3": "divinecraft:block/framed_lattice_contents",
+		"particle": "divinecraft:block/simple_frame_pillar"
 	},
 	"display": {
 		"thirdperson_righthand": {
