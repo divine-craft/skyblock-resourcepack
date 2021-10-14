@@ -42,26 +42,5 @@
 		"fixed": {
 			"scale": [0.5, 0.5, 0.5]
 		}
-	},
-	"groups": [
-		{
-			"name": "vertical",
-			"origin": [8, 8, 8],
-			"children": [0, 1, 2, 3]
-		},
-		{
-			"name": "horizontal",
-			"origin": [8, 8, 8],
-			"children": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-		},
-		{
-			"name": "walls",
-			"origin": [8, 8, 8],
-			"children": [14, 15, 16]
-		},
-		{
-			"name": "poddon",
-			"origin": [8, 8, 8],
-			"children": [17]
-		}, 18]
+	}
 }

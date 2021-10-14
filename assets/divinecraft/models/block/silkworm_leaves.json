@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "divinecraft:block/silkworm_leaves",
+		"all": "divinecraft:block/silkworm_leaves"
 	},
 	"display": {
 		"head": {
