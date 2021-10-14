@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/abstract_framed_device",
+	"parent": "divinecraft:block/abstract_framed_device",
 	"textures": {
 		"0": "divinecraft:block/block/simple_frame_pillar",
 		"1": "divinecraft:block/simple_frame_wall",
