@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "minecraft:block/dirt"
+	},
+	"display": {
+		"head": {
+			"scale": [1.725, 1.725, 1.725]
+		}
+    }
+}
