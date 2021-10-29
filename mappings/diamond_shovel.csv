@@ -29,6 +29,8 @@ Damage,Model
 264,divinecraft:item/lattice
 265,divinecraft:item/sieve
 266,divinecraft:item/fine_sieve
+286,divinecraft:item/impure_gold_fragments
+287,divinecraft:item/gold_fragments
 288,divinecraft:item/impure_coal_fragments
 289,divinecraft:item/coal_fragments
 290,divinecraft:item/impure_iron_fragments
