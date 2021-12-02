@@ -8,3 +8,10 @@ Damage,Model
 34,divinecraft:block/bronze_block
 35,divinecraft:block/tourmaline_block
 48,divinecraft:block/machine_casing
+256,divinecraft:block/humus
+257,divinecraft:block/render_air
+258,divinecraft:block/render_cobblestone
+259,divinecraft:block/render_lava
+260,divinecraft:block/render_gravel
+261,divinecraft:block/render_sand
+262,divinecraft:block/render_dirt

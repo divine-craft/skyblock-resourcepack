@@ -1,0 +1,12 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "divinecraft:block/humus"
+	},
+	"display": {
+		"head": {
+			"scale": [2.3, 2.3, 2.3]
+		}
+    }
+}
